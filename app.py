@@ -55,7 +55,8 @@ api_client = ApiClient(
     Configuration(
         debug=app.config["DEBUG"],
         oauth2_token=OAuth2Token(
-            client_id=app.config["CLIENT_ID"], client_secret=app.config["CLIENT_SECRET"]
+            client_id=app.config["CLIENT_ID"],
+            client_secret=app.config["CLIENT_SECRET"]
         ),
     ),
     pool_threads=1,
